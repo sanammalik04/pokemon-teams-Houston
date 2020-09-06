@@ -2,6 +2,11 @@ require 'faker'
 
 
 class PokemonsController < ApplicationController
+
+  # def index
+  # @pokemon = Pokemon.all
+  # end
+
   def create
     unless pokemon_params[:trainer_id].nil?
       default = {}
